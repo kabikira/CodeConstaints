@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wQl-97-EER">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Normal View Controller-->
+        <scene sceneID="XHb-yh-ebC">
+            <objects>
+                <viewController id="wQl-97-EER" customClass="NormalViewController" customModule="CodeConstaints" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fxm-ke-FYU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PuB-Hy-QSe" userLabel="Header Container View">
+                                <rect key="frame" x="0.0" y="47" width="390" height="300"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="U9N-ee-knn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI8-67-i83">
+                                <rect key="frame" x="0.0" y="417" width="390" height="40.666666666666686"/>
+                                <string key="text">↑
+別のファイルから読み込んだよ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KzA-N2-gnY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PI8-67-i83" firstAttribute="leading" secondItem="Fxm-ke-FYU" secondAttribute="leading" id="0kQ-cS-lt8"/>
+                            <constraint firstItem="PI8-67-i83" firstAttribute="top" secondItem="PuB-Hy-QSe" secondAttribute="bottom" constant="70" id="9VJ-Ri-ELC"/>
+                            <constraint firstItem="PuB-Hy-QSe" firstAttribute="top" secondItem="KzA-N2-gnY" secondAttribute="top" id="P1r-o1-9H6"/>
+                            <constraint firstItem="KzA-N2-gnY" firstAttribute="trailing" secondItem="PuB-Hy-QSe" secondAttribute="trailing" id="ah9-sH-QlD"/>
+                            <constraint firstItem="PuB-Hy-QSe" firstAttribute="leading" secondItem="KzA-N2-gnY" secondAttribute="leading" id="ett-zS-I2e"/>
+                            <constraint firstAttribute="trailing" secondItem="PI8-67-i83" secondAttribute="trailing" id="hhL-eh-Niv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerContainerView" destination="PuB-Hy-QSe" id="dPc-B7-1v1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7op-Vu-b9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
